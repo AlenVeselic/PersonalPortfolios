@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/**
+ * Description
+ * @authors Your Name (you@example.org)
+ * @date    2021-02-10 20:59:35
+ * @version 1.0.0
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(117, 75, 19);
+}
+
+#wrapper {
+
+    /*width: 50vw;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    color: rgb(197, 154, 98);
+    font-size: 2em;
+    font-family:monospace ;
+    
+
+    height: 100vh;
+}
+
+.container:nth-child(odd){
+    /* background-color: teal; */
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    /*height: 30vh*/
+}
+
+#content {
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    border-top: 3px solid rgb(197, 154, 98);
+    border-bottom: 3px solid rgb(197, 154, 98);
+
+}
+
+#name{
+    width: 10vw;
+    text-align: end;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    bottom: 20px;
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*background-color: tomato; */
+    
+}
+
+#logo p{
+    display: block;
+    position: relative;
+    font-family:monospace ;
+    font-size: 3em;
+    width: 50%;
+    height:50%;
+    margin: 0;
+    padding: 0;
+}
+
+#lA{
+    bottom: 3px;
+}
+#lV{
+   
+}
+
+.triangleL{
+    width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  
+  border-right:20px solid rgb(197, 154, 98); 
+}
+
+.triangleR{
+width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid rgb(197, 154, 98);
+}
+
+
+#title{
+    width: 10vw;
+    
+}
+
