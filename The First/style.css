@@ -37,9 +37,11 @@
     justify-content: center;
     align-items: center;
     /*height: 30vh*/
+    /*background-color: brown;*/
 }
 
 #content {
+    flex-grow: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -57,7 +59,9 @@
 }
 
 #name{
-    width: 10vw;
+    /*background-color: brown;*/
+    overflow:hidden;
+    min-width: 50px;
     text-align: end;
 }
 
@@ -66,8 +70,8 @@
     flex-direction: column;
     position:relative;
     bottom: 20px;
-    width: 10vw;
-    height: 10vh;
+    min-width: 100px;
+    height: 92px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -113,7 +117,8 @@ width: 0;
 
 
 #title{
-    width: 10vw;
+    min-width: 50px;
+
     
 }
 
