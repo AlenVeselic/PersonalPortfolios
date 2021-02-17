@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/**
+ * Description
+ * @authors Your Name (you@example.org)
+ * @date    2021-02-17 19:18:42
+ * @version 1.0.0
+ */
+
+body{
+    background: url("pfd_SpilledCoffee.png") no-repeat;
+    background-size: cover;
+}
