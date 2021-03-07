@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/**
+ * Description
+ * @authors Your Name (you@example.org)
+ * @date    2021-03-07 12:04:24
+ * @version 1.0.0
+ */
+
+body{
+
+    color: white;
+    font-family: monospace;
+    font-size: 300px;
+    background-color: rgb(43,30,03);
+}
