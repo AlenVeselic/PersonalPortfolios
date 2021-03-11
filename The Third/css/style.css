@@ -6,10 +6,50 @@
  * @version 1.0.0
  */
 
-body{
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+div#content{
+    margin: 0;
+    padding: 0;
+    position:relative;
+    /*top: 25vh;*/
+    width: 100vw;
+    height: 75vh;
 
     color: white;
     font-family: monospace;
-    font-size: 300px;
+    font-size: 275px;
+
     background-color: rgb(43,30,03);
+}
+
+.wave{
+    width:99vw;
+    height: 20vh;
+
+    margin: 0;
+    padding: 0;
+    position:relative;
+    
+    background-color: white;
+}
+.wave > svg{
+    margin:0;
+    padding:0;
+    position: relative;
+    bottom:0px;
+    display: block;
+
+}
+
+
+
+p{
+    display:inline;
+    margin: 0;
+    padding: 0;
 }
