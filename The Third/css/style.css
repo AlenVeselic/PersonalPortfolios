@@ -12,7 +12,12 @@ html,body{
     background-color: white;
 }
 
+#content, .wave{
+    top: 100px;
+}
+
 div#content{
+    /*display:none;*/
     margin: 0;
     padding: 0;
     position:relative;
@@ -23,6 +28,10 @@ div#content{
     color: white;
     font-family: monospace;
     font-size: 275px;
+
+    white-space:normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     background-color: rgb(43,30,03);
 }
@@ -44,6 +53,11 @@ div#content{
     bottom:0px;
     display: block;
 
+}
+
+.wave > img{
+    height:21vh;
+    width: 100vw;
 }
 
 
