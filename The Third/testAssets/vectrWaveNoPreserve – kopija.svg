@@ -7,7 +7,10 @@
 		<path d="M0 136.04L0 36.04C13.28 37.62 21.58 38.6 24.9 39C119.9 50.27 216.15 44.56 309.15 22.15C340.93 14.49 312.95 21.23 349.05 12.53C426.95 -6.25 508.46 -3.88 585.15 19.39C592.46 21.61 610.74 27.16 640 36.04L640 136.04L0 136.04Z" id="dR3Fg0aiz">
 		</path>
 		
+		
 	</defs>
+	
+
 	<g>
 		<g>
 			<g>
@@ -16,15 +19,34 @@
 					</use>
 				</g>
 			</g>
+			
+
 			<g>
 				<use xlink:href="#dR3Fg0aiz" opacity="1" fill="#2b1e03" fill-opacity="1">
+				</use>
+				
+			</g>
+			<g>
+				<use xlink:href="#text" width="640" opacity="1" fill="black" fill-opacity="1">
 				</use>
 			</g>
 		</g>
 	</g>
-	<text width="125">
-			<textPath xlink:href ="#dR3Fg0aiz">
-			Alen Veselič
+	<text style="fill: rgb(43, 30, 3); font-size:25px; font-family: monospace;" dy="-10">
+			<textPath href ="#dR3Fg0aiz" startOffset="8%" >
+				Alen Veselič
 			</textPath>
 	</text>
+
+	<text style="fill: white; font-size:25px; font-family: monospace;" dy="-10">
+			<textPath href ="#innerLine" startOffset="2%" >
+				Web Developer
+			</textPath>
+	</text>
+
+	
+
+<path id="innerLine" style="fill: none; stroke: white; stroke-width: 5;" d="M -0.774 97.324 C 60.154 104.064 171.87 131.685 297.531 85.83 C 338.204 70.988 412.482 41.229 462.197 40.207 C 530.068 38.811 572.442 63.328 639.226 82.07"></path>
+
+	
 </svg>
