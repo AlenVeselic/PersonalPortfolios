@@ -7,32 +7,95 @@
  */
 
 body{
+
     display:flex;
+
     background-color: rgb(82, 61, 30);
+    color: rgb(82, 61, 30);
+
+    font-size: 4vh;
+
+}
+
+#everything{
+
+    min-width: 98vw;
+    min-height:98vh;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #card{
     width:40vw;
     height:40vh;
 
-    margin:auto;
-    margin-top: 25vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 
     background-color: white;
 
     border: white solid 5px;
-    border-radius: 10%;
+    border-radius: 10%/10%;
 }
 
 #content{
-    margin: auto;
-    margin-top: 2%;
+    padding: 3%;
 
-    width: 92%;
-    height: 90%;
+    display:flex;
+    flex-direction: column;
+    
+
+    width: 85%;
+    height: 75%;
 
     background-color: white;
 
     border: rgb(82, 61, 30) solid;
-    border-radius: 10%;
+    border-radius: 10%/10%;
 }
+
+#content div{
+
+    /*
+    border-top: cornflowerblue solid;
+    border-bottom: cornflowerblue solid;
+
+    background-color: burlywood;
+    */
+
+    display:flex;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+#name, #social{
+
+    flex-grow: 1;
+
+    align-items:flex-start;
+    justify-content: flex-start;
+
+}
+
+#social{
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#title{
+    flex-grow: 2;
+
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    font-size: 10vh;
+}
+
