@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+ * Description
+ * @authors Alen Veselič ()
+ * @date    2021-04-19 15:54:22
+ * @version 1.0.0
+ */
+
+body{
+    background-color: rgb(122, 87, 40);
+
+    overflow:hidden;
+}
+
+#content{
+    min-width:100vw;
+    min-height: 100vh;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#content img, #content div{
+    /*background-color: cornflowerblue;*/
+}
+
+.croissant{
+position:absolute;
+bottom: -20%;
+left:0%;
+
+width:700px;
+height:700px;
+
+transform: rotate(25deg);
+}
+
+.mug{
+    position:absolute;
+    top: -5%;
+    right:4%;
+
+    width:600px;
+    height:600px;
+
+    transform: rotate(50deg);
+}
+.polaroid{
+    position:absolute;
+
+    width:600px;
+    height:600px;
+    transform: rotate(35deg);
+}
+
+.info{
+    position:absolute;
+    left: 20%;
+    top:20%;
+
+    border-top: solid rgb(168, 129, 77) 1px;
+    border-left: solid rgb(168, 129, 77) 1px;
+    border-bottom: solid rgb(168, 129, 77) 1px;
+
+    font-size: 24px;
+    color: rgb(168, 129, 77);
+
+    padding: 0.5%;
+
+    min-width: 20%;
+    min-height:20%;
+}
