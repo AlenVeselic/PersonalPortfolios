@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * Description
+ * @authors Alen Veselič ()
+ * @date    2021-05-04 14:33:46
+ * @version 1.0.0
+ */
+
+ body{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+
+     width: 100vw;
+     height:100vh;
+     color: white;
+     background-color: rgb(108, 41, 139);
+ }
