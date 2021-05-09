@@ -12,13 +12,14 @@
 <link href="Styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="scrollSee"></div>
     
-   <div id="heroBanner">
+   <div id="heroBanner" class="fade">
     <div class="heroText">
-       <p class="greeting">Hello, my name is Alen Veselič</p>
-       <p class="greetingEnd">and I have a dream</p>
+       <p class="greeting fade">Hello, my name is Alen Veselič</p>
+       <p class="greetingEnd fade">and I have a dream</p>
     </div>
-    <p class="siteBegin"> A dream I will <span class="emph">never</span> quit pursuing</p>
+    <p class="siteBegin fade"> A dream I will <span class="emph fade">never</span><span class="fade"> quit pursuing</span></p>
    </div>
    
    <!--<div class="intro">
@@ -32,7 +33,7 @@
         </p>
     </div> -->
     <div class="content">
-    <div id="skills">
+    <div id="skills" class="fade">
         <!-- <p>
            they may not be much, but there's nothing that can't be improved
         </p> -->
@@ -83,6 +84,29 @@
             </li>
             <br>
             <li>
+                Web development
+                <ul>
+                    <li>
+                        Front End
+                            <ul>
+                                <li>Markup</li>
+                                <li>Layouts</li>
+                                <li>Colors</li>
+                                <li>Typography</li>
+                                <li>Animations</li>
+                                <li>Interactivity</li>
+                            </ul>
+                        Technically Back end
+                            <ul>
+                                <li>CRUD input system</li>
+                                <li>JSON databases</li>
+                                <li>Persistent data using local storage</li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
                 Command line scripts
                 <ul>
                     <li>Regular Expressions</li>
@@ -99,15 +123,8 @@
 
                 </ul>
             </li>
-            <br>
-            <li>
-                Websites
-                <ul>
-                    <li>
-                        Planning out a website's look and functionality based around it's purpose and aesthetic.
-                    </li>
-                </ul>
-            </li>
+            
+            
         </ul>
 
 
@@ -117,7 +134,7 @@
            I'm curious about all facets of development
         </p> -->
     </div>
-    <div class="projectSection">
+    <div class="projectSection fade">
         <h2>Projects</h2>
         <div id="projects">
             <!-- <p>
@@ -203,7 +220,7 @@
         </p>
         <p>For more of my projects, you can go ahead and check out my <a href="https://github.com/AlenVeselic">Github account</a>.</p>
     </div>
-   <div id="about">
+   <div id="about" class="fade">
        <!-- <p>A little bit more about me</p> -->
         <h2>About Me</h2>
         <p>I am a web developer, who wishes to broaden his knowledge on development and create/contribute
@@ -241,7 +258,7 @@
             </p>
         </p>
     </div>
-   <div id="education">
+   <div id="education" class="fade">
       <!-- <p>My passion had been ignited since childhood, but here is where I learned the basics</p> -->
       <h2>Education</h2>
       <p>
@@ -265,7 +282,7 @@
 
       
    </div>
-   <div id="contact">
+   <div id="contact" class="fade">
         <!-- <p>
             If you see any potential here feel free to shoot a message
             <br>
