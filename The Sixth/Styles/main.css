@@ -6,6 +6,7 @@
  * @version 1.0.0
  */
 
+
  html, body{
      margin: 0;
      padding: 0;
@@ -23,7 +24,7 @@
      width: 100%;
      min-height:100vh;
      color: white;
-     background-color: rgb(108, 41, 139);
+     background-color: black;
  }
 
  .fade{
@@ -56,10 +57,7 @@
      justify-content: space-between;
 
      background-color: transparent;
-
-     
-     
- }
+}
 
 
  
@@ -85,19 +83,7 @@
     align-self: flex-end;
  }
 
- @media all and (max-width: 600px){
-    .heroText{
-        flex-direction: column;
-    }
-
-    .greeting, .greetingEnd{
-        align-self: center;
-        text-align: center;
-    }
-
-    
-
-}
+ 
 
  .siteBegin{
      margin:0;
@@ -152,8 +138,6 @@ ul{
 
 #projects{
     
-
-    
     display: grid;
     
     grid-template-columns: repeat(3, auto);
@@ -162,7 +146,30 @@ ul{
 
 }
 
-#prjects h3{
+@media all and (max-width: 600px){
+    .heroText{
+        flex-direction: column;
+    }
+
+    .greeting, .greetingEnd, .siteBegin{
+        align-self: center;
+        text-align: center;
+    }
+
+    .conceptList{
+        flex-direction: column;
+    }
+
+    #projects{
+        display:flex;
+        flex-direction: column;
+    }
+
+    
+
+}
+
+#projects h3{
     grid-row: 1;
 }
 
