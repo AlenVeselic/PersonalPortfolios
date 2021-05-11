@@ -29,7 +29,7 @@ document.addEventListener('scroll', function(e) {
     document.getElementsByClassName("scrollSee")[0].innerHTML = lastKnownScrollPosition
 
     
-    if(Math.round(scrollY) >= sectionPixelRanges[sectionPixelRanges.length - 1]){
+    if(Math.round(scrollY) >= sectionPixelRanges[sectionPixelRanges.length - 1] && sectionPixelRanges.length > 1){
         let timeDelay = i
          while(sectionEnumerator != 11){
              sectionPixelRanges.shift()
@@ -76,5 +76,19 @@ document.addEventListener('scroll', function(e) {
     matches[10].style["animationDelay"] = "1s"
     }
     */
+    if(Math.round(scrollY) == 500){
+        let bod = document.querySelector('body')
+        let comput = window.getComputedStyle(bod)
+        if(comput.getPropertyValue('color') == 'rgb(255, 255, 0)'){
+            
+            document.body.style["animation"] = "colorChange 15s backwards"
+            document.body.style["animationDirection"] = "reverse"
+        }else if(comput.getPropertyValue('color') == 'rgb(255, 255, 255)'){
+            document.body.style["animation"] = "colorChange 15s forwards"
+        }
+        
+    }
+
     });
 
+    
