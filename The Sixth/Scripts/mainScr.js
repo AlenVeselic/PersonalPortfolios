@@ -76,7 +76,8 @@ document.addEventListener('scroll', function(e) {
     matches[10].style["animationDelay"] = "1s"
     }
     */
-    if(Math.round(scrollY) == 500){
+   
+    /*if(Math.round(scrollY) == 500){
         let bod = document.querySelector('body')
         let comput = window.getComputedStyle(bod)
         if(comput.getPropertyValue('color') == 'rgb(255, 255, 0)'){
@@ -88,6 +89,7 @@ document.addEventListener('scroll', function(e) {
         }
         
     }
+    */
 
     });
 
