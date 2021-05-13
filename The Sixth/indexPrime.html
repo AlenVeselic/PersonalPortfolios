@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+<link href="Styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="scrollSee"></div>
+    
+   <div id="heroBanner" class="fade">
+    <div class="heroText">
+       <p class="greeting fade">Hello, my name is Alen Veselič</p>
+       <p class="greetingEnd fade">and I have a dream</p>
+    </div>
+    <div id="bannerSubTitle">
+        <p class="siteBegin fade"> A dream I will <span class="emph fade"> never </span><span class="fade"> quit pursuing</span></p>
+    </div>
+</div>
+   
+   <!--<div class="intro">
+       <p>
+           I like building websites, you see
+           <br>
+           Some static with some creative flair
+           <br>
+           Others more technical, providing a service
+           <br>
+        </p>
+    </div> -->
+    <div class="content">
+    <div id="skills" class="fade">
+        <!-- <p>
+           they may not be much, but there's nothing that can't be improved
+        </p> -->
+        <h2 class="mainHead">My skills</h2>
+        <p class="subtitle skills">Some acquired through education, others self-thaught</p>
+        <h3 class="skills">Languages</h3>
+        <p class="subtitle skills">I'm a generalist so I don't mind plunging into docs/tuts to learn new languages</p>
+        <h4 class="skills">Familiarity from (highest)left to (lowest)right</h2>
+        <ul class="skillList skills">
+            <li class="empty">
+            </li>
+            <li>
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                JAVASCRIPT
+            </li>      
+            <li>
+                PYTHON
+            </li>
+            <li>
+                C++
+            </li>
+            <li>
+                POSTGRESQL
+            </li>   
+            <li>
+                MySQL
+            </li> 
+            <li>
+                PHP 
+            </li>  
+            <li class="empty">
+            </li>
+        </ul>
+        
+        <h3 class="skills">Concepts</h3>
+        
+        <ul class="conceptList skills">
+            <li>
+                <h4>Relational databases</h4>
+                <ul>
+                    <li>Planning</li>
+                    <li>Creating</li>
+                    <li>Modifying</li>
+                    <li>Functions</li>
+                    <li>Triggers</li>
+                    <li>Transactions</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h4>Web development</h4>
+                <ul>
+                    <li>
+                        <h5>Front End</h5>
+                            <ul>
+                                <li>Markup</li>
+                                <li>Layouts</li>
+                                <li>Colors</li>
+                                <li>Typography</li>
+                                <li>Animations</li>
+                                <li>Interactivity</li>
+                            </ul>
+                        <h5>Technically Back end</h5>
+                            <ul>
+                                <li>CRUD input system</li>
+                                <li>JSON databases</li>
+                                <li>Persistent data using local storage</li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h4>Command line scripts</h4>
+                <ul>
+                    <li>Regular Expressions</li>
+                    <li>Input validation</li>
+                    <li>Reading, writing and organizing Files</li>
+                    <li>Reading and saving data as CSV or JSON files</li>
+                    <li>Interacting with spreadsheets and documents</li>
+                    <li>Web scraping</li>
+                    <li>Automating browser interaction with Selenium</li>
+                    <li>Sending and receiving email</li>
+                    <li>calling APIs</li>
+                    <li>Manipulating images</li>
+                    <li>basic GUI automation</li>
+
+                </ul>
+            </li>
+            
+            
+        </ul>
+
+
+       <!-- <p>
+           learning something new is always a welcome challenge to me
+           <br>
+           I'm curious about all facets of development
+        </p> -->
+    </div>
+    <h2 class="fade skills">Projects</h2>
+    <div class="projectSection fade skills projects">
+        
+        <div id="projects">
+            <!-- <p>
+                I've been keeping myself busy, staying sharp, tried out different ideas, improved with each
+                <br>
+            </p> -->
+        
+            
+                    <h3>Financial potential</h3>
+                    <div class="imageContainer">
+                        <img src="../../The Sixth raw assets/ScreenCaps/ScCp_FinancialPotential01.PNG" class="projImage">
+                    </div>
+                <div class="projInfo">
+                    <p>An app about logging your finances</p>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                    <p>
+                        Main view represents a shopping receipt
+                        <br>
+                        Everything logged using JSON and stringifying it into localStorage
+                        <br>
+                        Transactions can be created and removed.
+                        <br>
+                        A calendar view is available in case you wanted to look farther back than just a few days.
+                        <br> 
+                        Each day has sum of money spent in that days.
+                    </p>
+                </div>
+            
+            
+                <h3>Diet Planner</h3>
+                <div class="imageContainer">
+                    <img src="../../The Sixth raw assets/ScreenCaps/ScCp_DietPlanner01.PNG" class="projImage">
+                </div>
+                <div class="projInfo">
+                    <p>An app about saving your favorite foods in one place and generating a meal plan</p>
+                    <p>PYTHON, TKInter, Shelve</p>
+                    <p>
+                        Allows the user to set up a database of foods, categorized by time spent on preparation
+                        <br>
+                        These categories are: "Take out", "Recipes", "ready made" and "small Addition"
+                        <br>
+                        In the pictured version a user can add or remove foods, subcategories and categories.
+                        <br> 
+                        A meal planning algorithm is present in the program.
+                        This algorithm takes a day amount and amount of times certain categories may appear and generates a meal plan
+                        from all the foods in the database. 
+
+                    </p>
+                </div>
+            
+
+            
+                <h3>Storage check</h3>
+                <div class="imageContainer">
+                    <img src="../../The Sixth raw assets/ScreenCaps/ScCp_StorageCheck01.PNG" class="projImage imgSC">
+                </div>
+                <div class="projInfo">
+                    <p>An app about keeping check on inventory</p>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                    <p>
+                        Current version is solely based on serving it's purpose
+                        <br> 
+                        The image is divided into two views: 
+                        <br>
+                        the upper one represents the soon to be new view for database modification
+                        <br>
+                        the lower one represents the initial steps taken to get database communication 
+                        <br>
+                        Everything is saved using JSON and localStorage
+                        <br>
+                        A user can add: places, rooms, objects and items saved within those
+                        <br>
+                        They can also remove those at will, depending on the deleted branch's position in the 
+                        database a variable amount of data is deleted.
+
+                    </p>
+                </div>
+            
+    
+        </div>
+        <p>All of these projects are a part of a group of programs I call the Life Organization Suite. They're meant to 
+            help anyone out in different aspects of everyday life.
+        </p>
+        <p>For more of my projects, you can go ahead and check out my <a href="https://github.com/AlenVeselic">Github account</a>.</p>
+    </div>
+   <div id="about" class="fade">
+       <!-- <p>A little bit more about me</p> -->
+        <h2>About Me</h2>
+        <p>I am a web developer, who wishes to broaden his knowledge on development and create/contribute
+            to projects which would in the end satisfy clients and end users.
+            
+            I’ve mostly been focusing on frontend, trying to build my fundamental knowledge of html,
+            css and javascript. Besides that I also had a bit of a craving for scripting 
+            languages so I decided to tackle Python recently. Currently looking for a mentorship 
+            since It feels like I need some guidance in getting my skills to an employable level
+            and marketing myself on the job market.
+        </p>
+
+        <h2>My backstory</h2>
+        <button onclick="toggleDisplay()">+</button>
+        <p class="backStory">
+            Ever since I was a child I was fascinated with computers. I was introduced to computers back when I was 6 and we used to visit my cousins, I’d watch them play video games astounded at what I was seeing. Soon our family would borrow a pc from them and I’d come to realise that there was far more to these magic game boxes than just video games.
+            <br><br>
+            I’d be immersed in them throughout elementary and after that when the decision was to be made where I would continue my journey in education I decided to go for the “Tehnik Računalništva” program at the nearby Computer Science secondary school. 
+            <br><br>
+            This program’s emphasis was programming. Here I spent 4 years learning the basics of computer science. In general this started off with hardware, the history of computer science, planning a task out with flow charts and ended up with us programming a full stack shop, mobile applications in android studio, command line scripts in c++ and various databases in postgreSQL. 
+            <br><br>
+            Having successfully graduated from secondary school along with finishing some extra  credits to get into my uni program of choice I thought I’d give university the good old college try. That didn’t go so well and I decided to drop out after the first year. This, however, did not dash my dream to work in development.
+            <br><br>
+            Being a dropout, in the countryside where there was little to no demand for junior developers I realised I needed to get a job outside my field and continue my pursuit to further my dream outside of work hours.
+            I got a job as an automatic press worker in a nearby aluminum factory. My plan was to use the funds from this job to become independent and continue studying development, while still hunting for jobs in the field. The field I decided to focus on was web development.
+            <br><br>
+            Eventually I got a car, moved out into a city with more opportunity and grew a lot as a person.
+            <br><br>
+            Recently I learned a new programming language named Python. Started a new schedule, dividing each month into job hunting and studying development.
+            <br><br>
+            I am still determined to one day break into the field and when I do I will be very happy, because that will mean that I will get to develop both as a job and at home, allowing me to work on my skills as a developer twofold.
+            <br><br>
+            <p>
+            If you’ve read this far, I’d like to thank you for reading my story and wish you a good day.
+            </p>
+        </p>
+    </div>
+   <div id="education" class="fade">
+      <!-- <p>My passion had been ignited since childhood, but here is where I learned the basics</p> -->
+      <h2>Education</h2>
+      <p>
+        
+
+        SCPtuj ERŠ
+        <br>
+        Computer tech program
+        <br>
+        2013-2017
+      </p>
+
+    <h2>Occupation</h2>
+      <p>
+        Talum
+        <br>
+        automatic press worker
+        <br> 
+        2018 - present
+      </p>
+
+      
+   </div>
+   <div id="contact" class="fade">
+        <!-- <p>
+            If you see any potential here feel free to shoot a message
+            <br>
+            Currently looking for a junior position
+        </p> -->
+        <h2>Contact</h2>
+        <a href="mailto:alen.veselic01@gmail.com">Mail me</a>
+   </div>
+</div>
+
+<script src="Scripts/mainScr.js"></script>
+</body>
+</html>
