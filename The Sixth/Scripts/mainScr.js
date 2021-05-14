@@ -5,7 +5,7 @@ for(match of matches){
     match.style["animation"] = "fadeIn 1s forwards"
     match.style["animationDelay"] = i.toString() + "s"
     i = i+1
-    if(i == 8){
+    if(i == 9){
         break
     }
 }
@@ -19,7 +19,7 @@ function toggleDisplay(){
 
 let lastKnownScrollPosition = 0;
 let sectionPixelRanges = []
-for(let matchStart = 8; matchStart < matches.length; matchStart++){
+for(let matchStart = 9; matchStart < matches.length; matchStart++){
 sectionPixelRanges.push(matches[matchStart].offsetTop - 200)
 }
 /*
@@ -27,7 +27,7 @@ let sectionPixelRanges = [
     600, matches[9].offsetTop - 200, 1300, 1500, 1800, 1900
 ]
 */
-let sectionEnumerator = 8
+let sectionEnumerator = 9
 
 document.addEventListener('scroll', function(e) {
     lastKnownScrollPosition = window.scrollY;
@@ -41,7 +41,7 @@ document.addEventListener('scroll', function(e) {
     if(Math.round(scrollY) >= sectionPixelRanges[sectionPixelRanges.length - 1] && sectionPixelRanges.length > 1){
         let timeDelay = 1
         let sectionEnumerator = 0;
-         while(sectionEnumerator < 17){
+         while(sectionEnumerator < 18){
              sectionPixelRanges.shift()
              matches[sectionEnumerator].style["animation"] = "fadeIn 1s forwards"
              matches[sectionEnumerator].style["animationDelay"] = timeDelay.toString() + "s"

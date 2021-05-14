@@ -38,10 +38,12 @@
      align-items: center;
 
      background-color: transparent;
-     width: 99%;
-     min-height: 50vh;
-
+     width: 99.4%;
+     min-height: 75vh;
      
+
+     border: 0.1vw solid red;
+     border-bottom: none;
 
      font-size: 50px;
      line-height: 90%;
@@ -58,8 +60,8 @@
 
      background-color: transparent;
 
-     border: 0.1vw solid red;
-     border-top: none;
+     
+     
      
 }
 
@@ -94,10 +96,12 @@
      bottom: -1px;
      min-height: 10vh;
      min-width: 50vw;
+     
+     margin-bottom: 25vh;
 
-     border-left: 0.1vw solid red;
-     border-right: 0.1vw solid red;
-     border-bottom: 0.1vw solid black;
+     z-index: 5;
+
+     
 
      justify-content: center;
  }
@@ -127,8 +131,11 @@
     flex-direction: column;
     align-items: center;
 
+    z-index: -1;
+
     max-width: 98.5vw;
     border: 0.1vw solid red;
+    border-top: none;
 }
 
 #skills{
@@ -144,14 +151,30 @@ h2, h3, h4, h5{
     padding:0;
 }
 
-.mainHead{
-    margin:0;
-    padding:0;
+.skills{
 
-
-    min-width: 99.9%;
+    max-width: 99.7%;
     
+    border: 0.1vw orange solid;
+    
+    z-index: -1;
+
 }
+
+.projects{
+    
+
+    border: 0.1vw green solid;
+}
+
+.about{
+    border: 0.1vw hotpink solid;
+}
+
+.education{
+    border: 0.1vw blueviolet solid;
+}
+
 .subtitle{
     margin:0;
     padding:0;
@@ -163,14 +186,7 @@ ul{
     list-style-type: none;
 }
 
-.skills{
 
-    max-width: 99.7%;
-    
-    border: 0.1vw orange solid;
-    
-
-}
 
 .skillList{
     display:flex;
@@ -212,11 +228,7 @@ ul{
     
 }
 
-.projects{
-    
 
-    border: 0.1vw green solid;
-}
 
 #projects{
     
@@ -297,8 +309,10 @@ ul{
     flex-direction: column;
     max-width: 99.7%;
 
-    border: 0.1vw hotpink solid;
+    
 }
+
+
 
 #education{
     display: flex;
@@ -306,7 +320,7 @@ ul{
 
     max-width: 99.7%;
 
-    border: 0.1vw blueviolet solid;
+    
     
 }
 
@@ -355,6 +369,19 @@ p, h2, li, h3, img, a{
     position:fixed;
     left: 50px;
     top:100px;
+}
+
+.mainHead{
+    position: relative;
+    bottom: -1px;
+    
+    z-index: 1;
+
+    margin:0;
+    padding:10px 20px;
+
+    border-bottom: 0.1vw solid black;
+
 }
 
 @keyframes fadeIn{
