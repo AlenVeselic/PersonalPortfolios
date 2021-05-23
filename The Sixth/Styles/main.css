@@ -33,18 +33,30 @@
  }
 
  .quickMenu{
-     display:flex;
+     display:none;
      flex-direction: column;
+
+     justify-content: center;
     
      position:fixed;
-     left: 100px;
-     bottom: 100px;
+     left: 5vw;
+     bottom: 5vh;
      z-index: 1;
     
-     min-width: 10vw;
-     height: auto;
+     min-width: 13vw;
+     height: 10vh;
     
-     background-color: rgb(211, 61, 61);
+     padding: 0.2vw;
+
+     background-color: rgba(255, 255, 255, 0.418);
+ }
+
+ .toggleMenuButton{
+     position: fixed;
+     left: 2vw;
+     bottom:5vh;
+
+     z-index: 1;
  }
     
 
@@ -163,7 +175,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
+
+    padding-top: 2.5vh;
     
 }
 
@@ -172,14 +187,40 @@ h2, h3, h4, h5{
     padding:0;
 }
 
+h2.skills{
+    color: orange;
+}
 .skills{
 
     max-width: 99.7%;
     
     border: 0.1vw orange solid;
     
+    
     z-index: -1;
 
+}
+
+.skills h3{
+    color: orange;
+}
+
+.skills h4{
+    color: rgb(236, 178, 70);
+}
+
+.skills h5{
+    color: rgb(214, 165, 75);
+}
+
+
+.conceptList h5{
+    background-color: rgba(255, 166, 0, 0.158);
+}
+
+h2.projects{
+    margin-top: 10vh;
+    color: green
 }
 
 .projects{
@@ -188,12 +229,35 @@ h2, h3, h4, h5{
     border: 0.1vw green solid;
 }
 
+.projects h3{
+    color: rgb(66, 131, 66);
+}
+
+#projects{
+    margin-top: 5vh;
+}
+
+h2.about{
+    color: hotpink;
+}
+
 .about{
     border: 0.1vw hotpink solid;
 }
 
+.no-border{
+    border:none;
+}
+
+h2.education{
+    color: blueviolet;
+}
 .education{
     border: 0.1vw blueviolet solid;
+}
+
+h2.occup{
+    color:grey;
 }
 
 .occup{
@@ -218,13 +282,16 @@ ul{
     
     justify-content: space-between;
 
-    min-width: 50vw;
+    min-width: 60vw;
 
     margin: 0;
     padding: 0;
 
-    
-    
+}
+
+.skillList li{
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .conceptList{
@@ -237,8 +304,10 @@ ul{
     margin: 0;
     padding: 0;
 
-    width: 20vw;
+    width: 30vw;
 }
+
+
 
 
 
@@ -263,6 +332,11 @@ ul{
     grid-template-rows: repeat(3, auto);
 
 
+}
+
+#projects .columnTwo{
+    border-left: green 2px solid;
+    border-right: green 2px solid;
 }
 
 @media all and (max-width: 600px){
@@ -290,6 +364,7 @@ ul{
 
 #projects h3{
     grid-row: 1;
+    padding-bottom: 2vh;
 }
 
 
@@ -301,7 +376,6 @@ ul{
     align-items: center;
     height: auto;
 }
-
 
 .imageContainer{
     
@@ -328,6 +402,8 @@ ul{
     flex-direction: column;
 
     
+
+    
 }
 
 #about{
@@ -338,6 +414,12 @@ ul{
     align-items: center;
 
     
+
+    
+}
+
+#aboutSummary{
+    padding: 0 5vw; 
 }
 
 
@@ -387,15 +469,27 @@ p, h2, li, h3, img, a{
 .backStory{
     display:none;
     text-align: left;
+    
+    padding: 0 10vw;
 }
 
-.backStory span{
-    text-align: center;
 
+.stripButton{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-.show{
+.showBlock{
     display: block;
+}
+
+.showFlex{
+    display:flex;
 }
 
 .scrollSee{

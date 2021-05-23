@@ -10,12 +10,30 @@ for(match of matches){
     }
 }
 
-function toggleDisplay(){
-    let elBackstory = document.getElementsByClassName("backStory")[0] 
-    elBackstory.classList.toggle("show")
-    elBackstory.style["animationDelay"] = "0s"
+function toggleDisplayBlock(){
+    let elBackstory = document.getElementsByClassName("backStory")
+    for(paragraph of elBackstory){
+    paragraph.classList.toggle("showBlock")
+    paragraph.style["animationDelay"] = "0s"
+    }
 
 }
+
+function toggleDisplayFlex(){
+    let elMenu = document.getElementsByClassName('quickMenu')[0]
+    elMenu.classList.toggle('showFlex')
+    elMenu.style["animationDelay"] = "0s"
+}
+
+function toggleIcon(){
+    buttonElement = document.getElementsByClassName("toggleMenuButton")[0]
+    if(buttonElement.innerText == ">"){
+        buttonElement.innerText = "<"
+    }else{
+        buttonElement.innerText = ">"
+    }
+}
+
 
 let lastKnownScrollPosition = 0;
 let sectionPixelRanges = []

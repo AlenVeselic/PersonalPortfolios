@@ -14,11 +14,13 @@
 <body>
     <div class="scrollSee"></div>
 
+    <button class="stripButton toggleMenuButton" onclick="toggleDisplayFlex(), toggleIcon()">></button>
+
     <div class="quickMenu fade">
-        <a>LinkedIn</a>
-        <a>Github</a>
-        <button><a href="C:\Users\alene\Desktop\Projects\Web Development\Projects\Portfolios\PersonalPortfolios\The Sixth\Assets\Documents\CV_AlenVeselič_2021.pdf"
-         download="CV_AlenVeselič_2021.pdf">Download CV</a></button>
+        <a href="https://www.linkedin.com/in/alen-veseli%C4%8D-3a847b186/">LinkedIn</a>
+        <a href="https://github.com/AlenVeselic">Github</a>
+        <a href="C:\Users\alene\Desktop\Projects\Web Development\Projects\Portfolios\PersonalPortfolios\The Sixth\Assets\Documents\CV_AlenVeselič_2021.pdf"
+         download="CV_AlenVeselič_2021.pdf">Download CV</a>
     </div>
     
    <div id="heroBanner" class="fade">
@@ -27,7 +29,7 @@
         <p class="greetingEnd fade">and I have a dream</p>
         </div>
         <div id="bannerSubTitle">
-            <p class="siteBegin fade"> A dream I will <span class="emph fade"> never </span><span class="fade"> quit pursuing</span></p>
+            <p class="siteBegin fade"> To <span class="emph fade"> develop websites </span><span class="fade"> professionally</span></p>
         </div>
     </div>
    
@@ -157,73 +159,73 @@
                     </p> -->
                 
                     
-                            <h3>Financial potential</h3>
-                            <div class="imageContainer">
-                                <img src="../../The Sixth raw assets/ScreenCaps/ScCp_FinancialPotential01.PNG" class="projImage">
-                            </div>
-                        <div class="projInfo">
+                        <h3 >Financial potential</h3>
+                        <div class="imageContainer columnOne">
+                            <img src="../../The Sixth raw assets/ScreenCaps/ScCp_FinancialPotential01.PNG" class="projImage">
+                        </div>
+                        <div class="projInfo columnOne">
                             <p>An app about logging your finances</p>
                             <p>HTML, CSS, JAVASCRIPT</p>
                             <p>
-                                Main view represents a shopping receipt
+                                Main view designed as a shopping receipt on a table
                                 <br>
-                                Everything logged using JSON and stringifying it into localStorage
+                                Transactions can be created and removed
                                 <br>
-                                Transactions can be created and removed.
+                                Transactions are categorized
                                 <br>
-                                A calendar view is available in case you wanted to look farther back than just a few days.
+                                Calendar view available for greater leaps in time
                                 <br> 
-                                Each day has sum of money spent in that days.
+                                Each day has sum of money spent in that day.
+                                <br>
+                                Data kept as stringified JSON in localStorage
                             </p>
                         </div>
                     
                     
                         <h3>Diet Planner</h3>
-                        <div class="imageContainer">
+                        <div class="imageContainer ">
                             <img src="../../The Sixth raw assets/ScreenCaps/ScCp_DietPlanner01.PNG" class="projImage">
                         </div>
-                        <div class="projInfo">
-                            <p>An app about saving your favorite foods in one place and generating a meal plan</p>
-                            <p>PYTHON, TKInter, Shelve</p>
-                            <p>
-                                Allows the user to set up a database of foods, categorized by time spent on preparation
+                        <div class="projInfo columnTwo">
+                            <p class="projSyn">An app about saving your favorite foods in one place and generating a meal plan</p>
+                            <p class="projTech">PYTHON, TKInter, Shelve</p>
+                            <p class="projDesc">
+                                Users set up their own databases of favorite foods
                                 <br>
-                                These categories are: "Take out", "Recipes", "ready made" and "small Addition"
+                                Default food types:"Take out", "Recipes", "ready made" and "small Addition"
                                 <br>
-                                In the pictured version a user can add or remove foods, subcategories and categories.
-                                <br> 
-                                A meal planning algorithm is present in the program.
-                                This algorithm takes a day amount and amount of times certain categories may appear and generates a meal plan
-                                from all the foods in the database. 
-
+                                The recipe type contains ingredients and prep instructions.
+                                <br>
+                                Foods can be stored in categories and subcategories 
+                                <br>
+                                A meal plan can be generated.
+                                <br>
+                                A meal plan accepts category frequency numbers for each category and plan length.
                             </p>
                         </div>
                     
 
                     
                         <h3>Storage check</h3>
-                        <div class="imageContainer">
+                        <div class="imageContainer columnThree">
                             <img src="../../The Sixth raw assets/ScreenCaps/ScCp_StorageCheck01.PNG" class="projImage imgSC">
                         </div>
-                        <div class="projInfo">
-                            <p>An app about keeping check on inventory</p>
+                        <div class="projInfo columnThree">
+                            <p>An app about keeping check on inventory items</p>
                             <p>HTML, CSS, JAVASCRIPT</p>
                             <p>
-                                Current version is solely based on serving it's purpose
+                                Users are able to set up databases around stored items in their home
                                 <br> 
-                                The image is divided into two views: 
-                                <br>
-                                the upper one represents the soon to be new view for database modification
-                                <br>
-                                the lower one represents the initial steps taken to get database communication 
-                                <br>
-                                Everything is saved using JSON and localStorage
-                                <br>
-                                A user can add: places, rooms, objects and items saved within those
-                                <br>
-                                They can also remove those at will, depending on the deleted branch's position in the 
-                                database a variable amount of data is deleted.
+                                The items are stored in objects, which are stored in rooms, which are stored in places
 
+                                <br>
+                                Image explanation: 
+                                <br>
+                                Beige area, new ui testing
+                                <br>
+                                Blue area, functionality testing
+                                <br>
+                                Data is saved as stringified JSON in local storage
                             </p>
                         </div>
                     
@@ -245,7 +247,7 @@
                 <div id="about" class="fade about">
                     <!-- <p>A little bit more about me</p> -->
                     
-                    <p>I am a web developer, who wishes to broaden his knowledge on development and create/contribute
+                    <p id="aboutSummary">I am a web developer, who wishes to broaden his knowledge on development and create/contribute
                         to projects which would in the end satisfy clients and end users.
                         
                         I’ve mostly been focusing on frontend, trying to build my fundamental knowledge of html,
@@ -255,10 +257,13 @@
                         and marketing myself on the job market.
                     </p>
 
-                    <h2>My backstory</h2>
-                    <button onclick="toggleDisplay()">
-                        +
-                    </button>
+                    <h2 class="about no-border">
+                        <button onclick="toggleDisplayBlock()" class="stripButton">
+                        My backstory +
+                        </button>
+
+                    </h2>
+                    
                     <p class="backStory">
                         Ever since I was a child I was fascinated with computers. I was introduced to computers back when I was 6 and we used to visit my cousins, I’d watch them play video games astounded at what I was seeing. Soon our family would borrow a pc from them and I’d come to realise that there was far more to these magic game boxes than just video games.
                         <br><br>
@@ -277,7 +282,7 @@
                         <br><br>
                         I am still determined to one day break into the field and when I do I will be very happy, because that will mean that I will get to develop both as a job and at home, allowing me to work on my skills as a developer twofold.
                         <br><br>
-                        <p>
+                        <p class="backStory">
                             If you’ve read this far, I’d like to thank you for reading my story and wish you a good day.
                         </p>
                     </p>
