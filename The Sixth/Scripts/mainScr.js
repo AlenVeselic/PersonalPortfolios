@@ -25,20 +25,24 @@ function toggleDisplayFlex(){
     elMenu.style["animationDelay"] = "0s"
 }
 
-function toggleIcon(){
+function toggleButton(){
     buttonElement = document.getElementsByClassName("toggleMenuButton")[0]
     if(buttonElement.innerText == ">"){
         buttonElement.innerText = "<"
+        buttonElement.classList.add("menuOpen")
     }else{
         buttonElement.innerText = ">"
+        buttonElement.classList.remove("menuOpen")
     }
+
+    
 }
 
 
 let lastKnownScrollPosition = 0;
 let sectionPixelRanges = []
 for(let matchStart = 8; matchStart < matches.length; matchStart++){
-sectionPixelRanges.push(matches[matchStart].offsetTop - 400)
+sectionPixelRanges.push(matches[matchStart].offsetTop - 600)
 }
 /*
 let sectionPixelRanges = [
