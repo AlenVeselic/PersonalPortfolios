@@ -70,9 +70,15 @@
      z-index: 1;
 
      height: calc(10vh + 0.4vw);
+     width: 2vw;
 
      background-color: white;
      color:black;
+ }
+
+ .openCloseImg{
+     width: 100%;
+     height: auto;
  }
   
  .menuOpen{
@@ -116,6 +122,10 @@
      
      
      
+}
+
+.eh{
+    font-size: 43px;
 }
 
 
@@ -186,6 +196,17 @@
      font-size: 10vh;
  }
 
+ .chevron{
+
+    margin-top: 2vh;
+    position: relative;
+
+     width:100px;
+     height:100px;
+
+     animation: 5s bounce infinite;
+ }
+
  .content{
     text-align: center;    
     display: flex;
@@ -196,7 +217,7 @@
 
     max-width: 99vw;
     
-    border-top: none;
+    margin-top: 10vh;
 }
 
 #skills{
@@ -559,5 +580,18 @@ p, h2, li, h3, img, a{
 
     100%{
         color: yellow;
+    }
+}
+
+@keyframes bounce{
+    0%{
+        bottom: 0px;
+    }
+
+    50%{
+        bottom: -8vh;
+    }
+    100%{
+        bottom: 0px;
     }
 }

@@ -26,14 +26,23 @@ function toggleDisplayFlex(){
 }
 
 function toggleButton(){
-    buttonElement = document.getElementsByClassName("toggleMenuButton")[0]
-    if(buttonElement.innerText == ">"){
+    var buttonElement = document.getElementsByClassName("toggleMenuButton")[0]
+    /*if(buttonElement.innerText == ">"){
         buttonElement.innerText = "<"
         buttonElement.classList.add("menuOpen")
     }else{
         buttonElement.innerText = ">"
         buttonElement.classList.remove("menuOpen")
+    }*/
+    if(buttonElement.classList.contains("menuOpen")){
+        buttonElement.style.transform= "scaleX(1)"
+        buttonElement.classList.toggle("menuOpen")
+    }else{
+        buttonElement.style.transform= "scaleX(-1)"
+        buttonElement.classList.toggle("menuOpen")
     }
+
+    
 
     
 }
