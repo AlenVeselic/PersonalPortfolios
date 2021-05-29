@@ -72,7 +72,7 @@ document.addEventListener('scroll', function(e) {
     if(Math.round(scrollY) >= sectionPixelRanges[sectionPixelRanges.length - 1] && sectionPixelRanges.length > 1){
         let timeDelay = 1
         let sectionEnumerator = 0;
-         while(sectionEnumerator < 19){
+         while(sectionEnumerator < 21){
              sectionPixelRanges.shift()
              matches[sectionEnumerator].style["animation"] = "fadeIn 1s forwards"
              matches[sectionEnumerator].style["animationDelay"] = timeDelay.toString() + "s"
