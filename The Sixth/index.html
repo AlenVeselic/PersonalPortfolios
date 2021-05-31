@@ -12,27 +12,32 @@
 <link href="Styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="scrollSee"></div>
+    <!--<div class="scrollSee"></div>-->
 
-    <button class="stripButton toggleMenuButton" onclick="toggleDisplayFlex(), toggleButton()"><img class="openCloseImg" src="Assets/Icons/icon_openClose.png"></button>
+    <button class="stripButton toggleMenuButton" onclick="toggleDisplayFlex(), toggleButton()">
+        <img class="openCloseImg" src="Assets/Icons/icon_openClose_transparent.png">
+    </button>
 
     <div class="quickMenu fade">
         <a href="https://www.linkedin.com/in/alen-veseli%C4%8D-3a847b186/">LinkedIn</a>
         <a href="https://github.com/AlenVeselic">Github</a>
         <a href="C:\Users\alene\Desktop\Projects\Web Development\Projects\Portfolios\PersonalPortfolios\The Sixth\Assets\Documents\CV_AlenVeselič_2021.pdf"
-         download="CV_AlenVeselič_2021.pdf">Download CV</a>
+         download="CV_AlenVeselič_2021.pdf">CV</a>
     </div>
     
    <div id="heroBanner" class="fade">
         <div class="heroText">
-        <p class="greeting fade">Hello, my name is Alen Veseli<span class="eh">č</span></p>
-        <p class="greetingEnd fade">and I strive for</p>
+        <p class="greeting fade">Hello, my name is </p>
+        <p class="name fade">Alen Veseli<span class="eh">č</span></p>
+        <p class="greetingEnd fade">and I am looking for work</p>
         </div>
         <div id="bannerSubTitle">
-            <p class="siteBegin fade">a position in <span class="emph fade">web development</span><span class="fade"></span></p>
+            <p class="siteBegin fade">in <span class="emph fade">web development</span><span class="fade"></span></p>
         </div>
     </div>
-    <img class="chevron"src="Assets/Icons/icon_chevron2.png">
+    <div class="fade">
+        <img class="chevron"src="Assets/Icons/icon_chevron2.png">
+    </div>
    <!--<p id="keepScrolling" class="clearSpace">ˇ</p>
    <div class="intro">
        <p>
@@ -222,9 +227,9 @@
                                 <br>
                                 Image explanation: 
                                 <br>
-                                Beige area, new ui testing
+                                Beige area: mobile ui testing
                                 <br>
-                                Blue area, functionality testing
+                                Blue area: functionality testing
                                 <br>
                                 Data is saved as stringified JSON in local storage
                             </p>
@@ -266,7 +271,7 @@
                     </h2>
                     
                     <p class="backStory fade">
-                        Ever since I was a child I was fascinated with computers. I was introduced to computers back when I was 6 and we used to visit my cousins, I’d watch them play video games astounded at what I was seeing. Soon our family would borrow a pc from them and I’d come to realise that there was far more to these magic game boxes than just video games.
+                        Ever since I was a child I was fascinated by computers. I was introduced to computers back when I was 6 and we used to visit my cousins, I’d watch them play video games astounded at what I was seeing. Soon our family would borrow a pc from them and I’d come to realise that there was far more to these magic game boxes than just video games.
                         <br><br>
                         I’d be immersed in them throughout elementary and after that when the decision was to be made where I would continue my journey in education I decided to go for the “Tehnik Računalništva” program at the nearby Computer Science secondary school. 
                         <br><br>
@@ -281,7 +286,7 @@
                         <br><br>
                         Recently I learned a new programming language named Python. Started a new schedule, dividing each month into job hunting and studying development.
                         <br><br>
-                        I am still determined to one day break into the field and when I do I will be very happy, because that will mean that I will get to develop both as a job and at home, allowing me to work on my skills as a developer twofold.
+                        I am still determined to one day break into the field and when I do I will be very happy, because that will mean that I will get to develop both at a job and at home, allowing me to work on my skills as a developer twofold.
                         <br><br>
                         <p class="backStory fade">
                             If you’ve read this far, I’d like to thank you for reading my story and wish you a good day.
@@ -314,16 +319,40 @@
                             </p>
 
                         
-                    
+                            
                             <div id="contact" class="fade">
-                                <!-- <p>
-                                    If you see any potential here feel free to shoot a message
-                                    <br>
-                                    Currently looking for a junior position
-                                </p> -->
-                                <h2>Contact</h2>
-                                <a href="mailto:alen.veselic01@gmail.com">Mail me</a>
+                                <div class="borderContact education">
+                                    <div class="borderContact about" >
+                                        <div class="borderContact projects">
+                                            <div class="borderContact skills">
+                                                <!-- <p>
+                                                    If you see any potential here feel free to shoot a message
+                                                    <br>
+                                                    Currently looking for a junior position
+                                                </p> -->
+                                                <button onclick="toggleDisplayForm()" class="stripButton"><h2 id="contactTitle">Contact +</h2></button>
+                                                <!--
+                                                    <a href="mailto:alen.veselic01@gmail.com">Mail me</a>
+                                                -->
+                                                <form class="fade" method="post" name="contact" data-netlify="true">
+                                                    <label><p>Name: </p><input type="text" name="name"></label>
+                                                    
+                                                    <label><p>Email: </p><input type="email" name="email"></label>
+                                                    
+                                                    <label><p>Subject: </p><input type="text" name="subject"></label>
+                                                    
+                                                    <label><p>Message: </p></label>
+                                                    <textarea name="message"></textarea>
+                                                    <input type="submit" value="Submit">
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
