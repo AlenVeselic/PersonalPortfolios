@@ -17,6 +17,14 @@ function toggleDisplayBlock(){
     paragraph.style["animationDelay"] = "0s"
     }
 
+    let header = document.getElementsByClassName('no-border')[0]
+    elButton = header.getElementsByClassName('stripButton')[0]
+    if(elButton.innerText == "My backstory +"){
+        elButton.innerText = "My backstory -"
+    }else{
+        elButton.innerText = "My backstory +"
+    }
+
 }
 
 function toggleDisplayFlex(){
@@ -98,7 +106,7 @@ document.addEventListener('scroll', function(e) {
     if(Math.round(lastKnownScrollPosition) >= sectionPixelRanges[sectionPixelRanges.length - 1] ){
         let timeDelay = 1
         let sectionEnumerator = 0;
-         while(sectionEnumerator < 24){
+         while(sectionEnumerator < 25){
              sectionPixelRanges.shift()
              matches[sectionEnumerator].style["animation"] = "fadeIn 1s forwards"
              matches[sectionEnumerator].style["animationDelay"] = timeDelay.toString() + "s"

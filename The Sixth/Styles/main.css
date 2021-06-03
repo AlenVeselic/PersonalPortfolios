@@ -13,6 +13,7 @@
 
 
      font-family: 'Mandali', sans-serif;
+     /*font-family: 'Noto Sans', sans-serif;*/
  }
 
  body{
@@ -174,7 +175,7 @@
 }
 
 .eh{
-    font-size: 65px;
+    font-size: 66px;
 }
 
 
@@ -470,7 +471,9 @@ ul{
         flex-direction: column;
     }
 
-    
+    #projects .columnTwo{
+        border: none;
+    }
 
 }
 
@@ -518,6 +521,13 @@ ul{
     
 }
 
+.projects a{
+    color: rgb(71, 201, 71);
+}
+
+.projects a:visited{
+    color: darkgreen;
+}
 
 
 #about{
@@ -531,6 +541,11 @@ ul{
 
     
 }
+
+#about h3{
+    color: lightpink;
+}
+
 
 #aboutSummary{
     padding: 0 5vw; 
@@ -586,7 +601,7 @@ ul{
     position:relative;
     top: 0.21vh;
 
-    width:99.5%;
+    width:99%;
 
     z-index: 1;
 
@@ -595,6 +610,9 @@ ul{
     border-bottom: none;
 }
 
+textarea{
+    resize: vertical;
+}
 
 /*
 
