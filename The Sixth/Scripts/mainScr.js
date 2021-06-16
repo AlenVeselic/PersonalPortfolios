@@ -72,7 +72,7 @@ function toggleButton(){
 let lastKnownScrollPosition = 0;
 let sectionPixelRanges = []
 for(let matchStart = 9; matchStart < matches.length; matchStart++){
-sectionPixelRanges.push(matches[matchStart].offsetTop - 300)
+sectionPixelRanges.push(matches[matchStart].offsetTop - 500)
 }
 function compareNumbers(a, b){
     return a - b;
